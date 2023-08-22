@@ -27,20 +27,6 @@ class MainScreen extends StatelessWidget {
                 storedEmail: '',
                 title: '',
               ))
-
-          //body heseg
-          // Column(
-          //   children: [
-          //     Expanded(child: Container(
-          //       height: 500,
-          //       color: Colors.white,
-          //     )),
-          //     Expanded(child: Container(
-          //       height: 500,
-          //       color: Colors.amber,
-          //     ))
-          //   ],
-          // )
         ],
       )),
     );

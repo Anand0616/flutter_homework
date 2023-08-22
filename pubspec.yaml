@@ -33,6 +33,7 @@ dependencies:
   get:
   get_storage:
   flutter_svg:
+  carousel_slider: ^4.2.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -65,6 +66,9 @@ flutter:
   assets:
     - assets/images/logo.png
     - assets/images/profile.jpg
+    - assets/images/back_1.jpg
+    - assets/images/back_2.jpg
+    - assets/images/back_3.jpg
     - assets/svgPictures/co_logo.svg
     - assets/svgPictures/dashboard.svg
     - assets/svgPictures/search_pic.svg

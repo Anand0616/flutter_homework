@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:fl_chart/fl_chart.dart';
 
 class Body extends StatelessWidget {
-  const Body({super.key, required this.title, required this.storedEmail});
+  Body({super.key, required this.title, required this.storedEmail});
   final String title;
   final String storedEmail;
+
+  final List<Color> gradientColors = [
+    const Color(0xff23b6e6),
+    const Color(0xff02d39a),
+  ];
+
   @override
   Widget build(BuildContext context) {
     final List<String> imgList = [
@@ -62,18 +69,40 @@ class Body extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(16),
-              child: InkWell(
-                onTap: () {
-                  // Navigator.pop(context);
-                },
-                child: Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: const DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage('assets/images/back_1.jpg'))),
-                  ),
+              child: Expanded(
+                child: LineChart(
+                  LineChartData(
+                      minX: 0,
+                      maxX: 11,
+                      minY: 0,
+                      maxY: 6,
+                      titlesData: const FlTitlesData(show: false),
+                      lineBarsData: [
+                        LineChartBarData(
+                            spots: [
+                              FlSpot(0, 3),
+                              FlSpot(1, 1),
+                              FlSpot(1.2, 4.1),
+                              FlSpot(2.6, 1.3),
+                              FlSpot(3.2, 2.8),
+                              FlSpot(4, 3),
+                              FlSpot(4.6, 2.5),
+                              FlSpot(5.1, 5),
+                              FlSpot(6, 3.4),
+                              FlSpot(7, 5.2),
+                            ],
+                            isCurved: true,
+                            barWidth: 5,
+                            dotData: const FlDotData(show: false),
+                            gradient: LinearGradient(colors: gradientColors),
+                            belowBarData: BarAreaData(
+                              show: true,
+                              gradient: LinearGradient(
+                                  colors: gradientColors
+                                      .map((e) => e.withOpacity(0.3))
+                                      .toList()),
+                            ))
+                      ]),
                 ),
               ),
             ),
@@ -117,3 +146,4 @@ class Body extends StatelessWidget {
     );
   }
 }
+

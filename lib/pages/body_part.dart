@@ -25,26 +25,8 @@ class Body extends StatelessWidget {
                         left: 0.0,
                         right: 0.0,
                         child: Container(
-                          decoration: const BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [
-                                Color.fromARGB(200, 0, 0, 0),
-                                Color.fromARGB(0, 0, 0, 0)
-                              ],
-                              begin: Alignment.bottomCenter,
-                              end: Alignment.topCenter,
-                            ),
-                          ),
                           padding: const EdgeInsets.symmetric(
                               vertical: 10.0, horizontal: 20.0),
-                          // child: Text(
-                          //   'No. ${imgList.indexOf(item)} image',
-                          //   style: TextStyle(
-                          //     color: Colors.white,
-                          //     fontSize: 20.0,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
                         ),
                       ),
                     ],
@@ -82,7 +64,7 @@ class Body extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               child: InkWell(
                 onTap: () {
-                  Navigator.pop(context);
+                  // Navigator.pop(context);
                 },
                 child: Expanded(
                   child: Container(
@@ -99,7 +81,7 @@ class Body extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               child: InkWell(
                 onTap: () {
-                  Navigator.pop(context);
+                  // Navigator.pop(context);
                 },
                 child: Expanded(
                   child: Container(
@@ -116,7 +98,7 @@ class Body extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               child: InkWell(
                 onTap: () {
-                  Navigator.pop(context);
+                  // Navigator.pop(context);
                 },
                 child: Expanded(
                   child: Container(

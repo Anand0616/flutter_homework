@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/pages/sideMenu.dart';
+import 'package:my_app/pages/side_menu.dart';
 
 import 'dashboard_screen.dart';
 

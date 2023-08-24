@@ -69,6 +69,9 @@ flutter:
     - assets/images/back_1.jpg
     - assets/images/back_2.jpg
     - assets/images/back_3.jpg
+    - assets/images/news_1.jpg
+    - assets/images/news_2.jpg
+    - assets/images/news_3.jpg
     - assets/svgPictures/co_logo.svg
     - assets/svgPictures/dashboard.svg
     - assets/svgPictures/search_pic.svg
